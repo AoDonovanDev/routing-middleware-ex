@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h1>cart</h1>
+        <div id="addCntrls">
+            <label for="name">item name</label>
+            <input type="text" id="name" name="name" class="border-2">
+            <label for="price">price</label>
+            <input type="number" id="price" name="price" class="border-2">
+            <button class="outline-offset-2 border-2" id="addBtn">add to cart</button>
+        </div>
+    <div id="cart"></div>
 </body>
+<script src="script.js" defer></script>
 </html>
