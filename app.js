@@ -1,10 +1,11 @@
 const express = require("express")
 const app = express();
-const catsRoutes = require("./routes/cats")
-const ExpressError = require("./expressError")
+const cartRoutes = require("./routes/cart")
+const ExpressError = require("./expressError.js")
 
 app.use(express.json());
-app.use("/cats", catsRoutes);
+app.use("/cart", cartRoutes);
+app.use(express.static('static'));
 
 /** 404 handler */
 
